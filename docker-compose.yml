@@ -9,9 +9,9 @@ services:
   monguito:
     image: mongo
     ports:
-      - "27017:27017"
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=nico
+      - "27017:27017" # SO(ANFITRION):CONTENEDOR
+    environment: # Variables de entorno
+      - MONGO_INITDB_ROOT_USERNAME=leoulffe
       - MONGO_INITDB_ROOT_PASSWORD=password
     volumes:
       - mongo-data:/data/db

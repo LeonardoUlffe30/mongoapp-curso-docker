@@ -1,4 +1,4 @@
-version: "3.9"
+gversion: "3.9"
 services:
   chanchito:
     build:
@@ -15,7 +15,7 @@ services:
     ports:
       - "27017:27017"
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=nico
+      - MONGO_INITDB_ROOT_USERNAME=leoulffe
       - MONGO_INITDB_ROOT_PASSWORD=password
     volumes:
       - mongo-data:/data/db
